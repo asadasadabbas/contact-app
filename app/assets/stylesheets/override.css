@@ -1,0 +1,7 @@
+/*Custom css for the application*/
+span.error {
+    color: red;
+}
+.main_container{
+	background: #2A3F54!important
+}

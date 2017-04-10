@@ -1,0 +1,32 @@
+<!-- page content -->
+<div class="right_col" role="main" style="min-height: 680px;">
+  <div class="">
+    <div class="page-title">
+      <div class="title_left">
+        <h3>New Contact</h3>
+      </div>
+
+      <div class="title_right">
+        <div class="pull-right">
+          <%= link_to "<i class='md-add-circle'></i> Back".html_safe, contacts_path, class: 'btn btn-primary waves-effect waves-light' %>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="row">
+
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel" style="height:600px;">
+          <div class="x_title">
+            <div class="row">
+            	<%= render 'form', contact: @contact %>
+            </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

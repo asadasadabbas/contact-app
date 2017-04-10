@@ -1,0 +1,22 @@
+<div id="wrapper">
+  <div id="login" class="animate form">
+    <section class="login_content">
+    	<h1 style="margin-top: -23px">Password?</h1>
+		<%= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+			<%= f.input  :email, autofocus: true, placeholder: "Email", :input_html => { :class => 'form-control' } %>
+			<div class="actions">
+				<%= f.submit "Send me reset password instructions" %>
+			</div>
+		<% end %>
+    <div class="clearfix"></div>
+        <div class="separator">
+          <%= render "devise/shared/links" %>
+          
+          <div class="clearfix"></div>
+          <br />
+        </div>
+      <!-- form -->
+    </section>
+    <!-- content -->
+  </div>
+</div>

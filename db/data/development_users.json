@@ -1,0 +1,19 @@
+[
+	{ 
+		"info" : {
+			"first_name": "Asad", 
+			"last_name": "Abbas",
+			"phone": "9919741145", 
+			"email": "asad.asad.abbas@gmail.com", 
+			"password": "password1"
+		}
+	},{ 
+		"info" : {
+			"first_name": "Williams", 
+			"last_name": "Smith",
+			"phone": "123456789", 
+			"email": "williams@gmail.com", 
+			"password": "password1"
+		}
+	}
+]

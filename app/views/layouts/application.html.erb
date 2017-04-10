@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact App</title>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="nav-md" style="background: rgb(247, 247, 247)">
+<div class="container body">
+  <!-- <%# flash.each do |key, value| %> -->
+      <!-- <div align="center" id="flash" class="alert alert-<%#= key %>"><%#= value %></div> -->
+  <!-- <%# end %> -->
+  <% if notice %>
+     <div align="center" id="flash" class="alert alert-<%= notice %>"><%= notice %></div>
+  <% end %>
+  <% if alert %>
+    <div align="center" id="flash" class="alert alert-<%= alert %>"><%= alert %></div>
+  <% end %>
+
+
+
+<% if user_signed_in? %>
+  <%= render "partials/sidenav" %>
+  <%= render "partials/topnav" %>
+<% end %>
+<%= yield %>
+  <%= javascript_include_tag 'footermanifest', 'data-turbolinks-track' => true %>
+
+</body>
+</html>
